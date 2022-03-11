@@ -1,4 +1,4 @@
-let galleryImages = document.querySelectorAll(".gallery")
+let galleryImages = document.querySelectorAll(".gallery-img")
 let getLatestOpenedImg; 
 let windowWidth = window.innerWidth;
 
@@ -7,7 +7,6 @@ if(galleryImages) {
         image.onclick = function() {
             let getElementCss = window.getComputedStyle(image);
             let getFullImgUrl = getElementCss.getPropertyValue("background-image");
-            let getImgUrlPos = getFullImgUrl("/img/");
 
 
             getLatestOpenedImg = index;

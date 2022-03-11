@@ -1,69 +1,74 @@
 #index-gallery{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    grid-gap: 10px;
-
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 50px;
+  grid-template-areas: 
+  "gallery-p gallery-p gallery-p gallery-p"
+  "gallery-h2 gallery-h2 gallery-h2 gallery-h2"
+  "img1 img2 img3 img4"
+  "img5 img6 img7 img8";
 }
 
-#index-gallery .gallery-img{
-    width: 100%;
-    height: 
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    cursor: pointer;
+
+
+
+#index-gallery p{
+    grid-area: gallery-p;
+}
+#index-gallery h2{
+    grid-area: gallery-h2;
 }
 
 #img-window img {
     max-width: 80vw;
-    max-height: 80wh;
+    max-height: 80vh;
 }
 
-#galleri .img1{
-    grid-area: img1;
+#galleri .Img1{
+    grid-area: Img1;
     background-image: url("Img/chill.jpg.PNG");
 }
 
-#galleri .img2{
-    grid-area: img2;
+#galleri .Img2{
+    grid-area: Img2;
     background-image: url("Img/ksg2.jpg");
 }
 
-#galleri .img3{
-    grid-area: img3;
+#galleri .Img3{
+    grid-area: Img3;
     background-image: url("Img/mbdtf2.png");
 }
 
-#galleri .img4{
-    grid-area: img4;
+#galleri .Img4{
+    grid-area: Img4;
     background-image: url("Img/poggers.jpg");
 }
 
-#gallery .img5{
-    grid-area: img5;
+#gallery .Img5{
+    grid-area: Img5;
     background-image: url("Img/Skärmbild\ 2021-03-12\ 154251.png");
 }
 
-#gallery .img6{
-    grid-area: img6;
+#gallery .Img6{
+    grid-area: Img6;
     background-image: url("Img/spel.PNG");
 }
 
-#gallery .img7{
-    grid-area: img7;
+#gallery .Img7{
+    grid-area: Img7;
     background-image: url("Img/WIN_20201203_14_03_12_Pro.jpg");
 }
 
-#gallery .img8{
-    grid-area: img8;
+#gallery .Img8{
+    grid-area: Img8;
     background-image: url("Img/yeezus2.jpg");
 }
 
 /* popup bild */ 
 .img-window {
     width: 100vw;
-    height: 100wh;
+    height: 100vh;
     background-color: rgba(0, 0, 0, 0.8);
     position: fixed;
     top: 0;
