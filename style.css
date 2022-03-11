@@ -1,17 +1,63 @@
+#index-gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
 
-.gallery {
-    padding: 10px, 15px;
 }
 
-.gallery img{
-    transition: 1s;
-    padding: 20px;
-    width: 200px;
+#index-gallery .gallery-img{
+    width: 100%;
+    height: 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
 }
 
-.gallery img:hover{
-    filter: grayscale(100%);
-    transform: scale(1.1);
+#img-window img {
+    max-width: 80vw;
+    max-height: 80wh;
+}
+
+#galleri .img1{
+    grid-area: img1;
+    background-image: url("Img/chill.jpg.PNG");
+}
+
+#galleri .img2{
+    grid-area: img2;
+    background-image: url("Img/ksg2.jpg");
+}
+
+#galleri .img3{
+    grid-area: img3;
+    background-image: url("Img/mbdtf2.png");
+}
+
+#galleri .img4{
+    grid-area: img4;
+    background-image: url("Img/poggers.jpg");
+}
+
+#gallery .img5{
+    grid-area: img5;
+    background-image: url("Img/Skärmbild\ 2021-03-12\ 154251.png");
+}
+
+#gallery .img6{
+    grid-area: img6;
+    background-image: url("Img/spel.PNG");
+}
+
+#gallery .img7{
+    grid-area: img7;
+    background-image: url("Img/WIN_20201203_14_03_12_Pro.jpg");
+}
+
+#gallery .img8{
+    grid-area: img8;
+    background-image: url("Img/yeezus2.jpg");
 }
 
 /* popup bild */ 
@@ -27,9 +73,3 @@
     align-items: center;
     z-index: 100;
 }
-.img-window img {
- 
-    max-width: 80vw;
-    max-height: 80wh;
-}
-

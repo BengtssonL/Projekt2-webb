@@ -6,8 +6,10 @@ if(galleryImages) {
     galleryImages.forEach(function(image, index) {
         image.onclick = function() {
             let getElementCss = window.getComputedStyle(image);
-            let getFullImgUrl = getElementCss.getPropertyValue("img");
-           
+            let getFullImgUrl = getElementCss.getPropertyValue("background-image");
+            let getImgUrlPos = getFullImgUrl("/img/");
+
+
             getLatestOpenedImg = index;
 
             let container = document.body;
